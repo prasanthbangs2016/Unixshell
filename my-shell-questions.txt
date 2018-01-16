@@ -1,0 +1,31 @@
+Q && || difference?
+&&  - meaning and 
+|| - meaning or , 
+
+
+search and replace in vi
+%s/TOMCAT_IP_ADD/localhost/
+
+search and replace with sed
+sed -e 's/TOMCAT_IP_ADD/localhost/' worker.properties
+
+in script,Reason for quotes,since it is variable created
+sed -i -e "s/TOMCAT_IP_ADD/$TOMCAT_IP_ADD/" worker.properties
+
+mutli line comment in scripting
+<<comment
+
+comment
+
+Q how do you set line no in vi
+:set nu
+
+# in unix everyline starts with ^(cap symbol) and every line ends with $(dollar symbol)
+
+
+Q.want to insert a data end of the file using sed?
+
+#$ : stands for end of the line
+#i : insert data
+sed -e '$ i <Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource" maxTotal="100" maxIdle="30" maxWaitMillis="10000" username="student" password="student@1" driverClassName="com.mysql.jdbc.Driver" url="jdbc:mysql://10.128.0.6:3306/studentapp"/>' test.xml
+

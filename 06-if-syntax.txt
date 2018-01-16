@@ -1,0 +1,32 @@
+If statement
+
+1.simple if
+
+if [ exp ] ; then 
+			commands
+			
+fi
+
+if-else
+=======
+
+if [expr]; then
+		commands
+else
+		commands
+		
+fi
+
+
+else-if
+=======
+
+if [exp]; then
+		commands
+elif [exp2]; then
+		commands
+else
+		commands
+fi
+
+
